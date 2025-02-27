@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: binarycalculator-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: maven
+  template:
+    metadata:
+      labels:
+        app: maven
+    spec:
+      containers:
+        - image: eclipse-temurin:17-jdk-alpine
+          name: maven
+          ports:
+            - containerPort: 8080
+              name: BinaryCalculator
