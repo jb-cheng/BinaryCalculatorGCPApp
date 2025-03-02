@@ -17,10 +17,18 @@ See `.yaml` files.
 
 
 # Deployment Instructions
-```docker build -t northamerica-northeast2-docker.pkg.dev/axial-diagram-451822-g1/sofe3980u/binarycalculatorwebapp .```
+```
+docker build -t northamerica-northeast2-docker.pkg.dev/axial-diagram-451822-g1/sofe3980u/binarycalculatorwebapp .
+```
 
-```docker push northamerica-northeast2-docker.pkg.dev/axial-diagram-451822-g1/sofe3980u/binarycalculatorwebapp```
+```
+docker push northamerica-northeast2-docker.pkg.dev/axial-diagram-451822-g1/sofe3980u/binarycalculatorwebapp
+```
 
-```kubectl create -f binarycalculatorwebapp-deploy.yaml```
+```
+kubectl create -f binarycalculatorwebapp-deploy.yaml
+```
 
-```kubectl create -f binarycalculatorwebapp-service.yaml```
+```
+kubectl create -f binarycalculatorwebapp-service.yaml
+```
